@@ -28,7 +28,7 @@ export async function GET(req: NextRequest) {
         controller.enqueue(encoder.encode(event));
         i++;
 
-        setTimeout(sendLine, 300); // Delay to simulate streaming
+        setTimeout(sendLine, 100); // Delay to simulate streaming
       }
 
       sendLine();
